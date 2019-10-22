@@ -201,22 +201,17 @@ Flower Box:
 - - - - - - - - - - -
 ```
 answer:
-
-```
-swift
-let flowerBox = """
-- - - - - - - - - - -
-| ⚘ | ⚘ | ⚘ | ⚘ | ⚘ |
-| ⚘ | ⚘ | ⚘ | ⚘ | ⚘ |
-| ⚘ | ⚘ | ⚘ | ⚘ | ⚘ |
-| ⚘ | ⚘ | ⚘ | ⚘ | ⚘ |
-| ⚘ | ⚘ | ⚘ | ⚘ | ⚘ |
-| ⚘ | ⚘ | ⚘ | ⚘ | ⚘ |
-| ⚘ | ⚘ | ⚘ | ⚘ | ⚘ |
-- - - - - - - - - - -
-
-"""
-print(flowerBox)
+```swift
+for _ in 1...11 {
+    print("-", terminator: " ")
+}
+print()
+for _ in 1...7 {
+    print("| \u{2698} | \u{2698} | \u{2698} | \u{2698} | \u{2698} |")
+}
+for _ in 1...11 {
+    print("-", terminator: " ")
+}
 ```
 ***
 ## Question 13
